@@ -1,0 +1,44 @@
+{
+  "AutoTextList": [
+    {
+      "BASE_URL": "https://services-staging.allyo.com/dashboard/list",
+      "UserName": "ttn_qa",
+      "Password": "123@dashboard",
+      "ALLY_URL":"https://services-staging.allyo.com/admin_activity",
+      "ALLY_UserName":"QA_Automation",
+      "cell_Number":"880357238",
+      "ZipCode":"94063"
+    }
+  ],
+  "Query":
+  {
+    "intro":"Hi. I'm Ally from QA_AUTOMATION. I will help you find jobs instantly. To continue, reply Y for Yes.",
+    "y_cell_Number": "Understood. What's your cell number?",
+    "y_zipCode": "Understood. What zipcode would you like to work in?",
+    "y_availableJobs":"Got it! Here are the job(s) that I have available:",
+    "y_legallyAllowed":"Alright. Are you legally allowed to work in the United States? Reply with Y or N",
+    "y_ageVerification":"Thanks! Are you 18 years of age or older? Reply with Y or N",
+    "y_jobType":"Okay. Would you be interested in a Part-time or Full-time role? Reply with PT, FT or Either",
+    "y_ServSafeCertification":"Got it! Do you have a ServSafe certification? Reply with Y or N",
+    "y_NBAGames":"Okay. How many quarters in a NBA game?",
+    "y_YearsOFExperience":"Okay. How many years of relevant experience do you have? Reply with None or 1, 2+",
+    "y_RetailExperience":"Got it! How many years of retail experience do you have? Reply with None or 1-2, 3+",
+    "":"Unfortunately Role2 at QA_AUTOMATION requires one to have at least 2+ yrs of experience. Would you be interested in looking for other roles? (Y/N)",
+    "n_ThanksForYourInterest":"Got it. Thanks for your interest. We will stay in touch."
+  },
+  "ApplicationTracker":{
+    "ApplicationTracker_Header":"Applicant Tracker"
+  },
+  "Interview":{
+    "Interview_Header":"Interviews"
+  },
+  "RequisitionStatus":{
+    "RequisitionStatus_Header":"Requisition Status"
+  },
+  "Analytics":{
+    "Analytics_Header":"Analytics"
+  },
+  "InterviewerSchedule":{
+    "InterviewerSchedule_Header":"Interviewer Schedule"
+  }
+}
