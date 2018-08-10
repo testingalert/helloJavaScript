@@ -1,6 +1,4 @@
 
-var request = require('graphql-request');
-
 var util = require('util'),
 
 
@@ -16,26 +14,25 @@ describe('Test Employer Login Page', function () {
 
     beforeEach(function () {
         helperUtil.envInfo();
+        browser.ignoreSynchronization = true;
+        browser.get(JSONData.AutoTextList[0].BASE_URL);
+        helperUtil.login(JSONData.AutoTextList[0].UserName, JSONData.AutoTextList[0].Password);
     });
 
     afterEach(function () {
-
+        commonHeader_page.commonHeader_Logout().click().then(function () {
+            browser.driver.sleep(7000);
+        });
     });
 
 
     it('QTA-008 : Employer Login', function () {
 
-        browser.ignoreSynchronization = true;
-        browser.get(JSONData.AutoTextList[0].BASE_URL);
-
-        helperUtil.login(JSONData.AutoTextList[0].UserName, JSONData.AutoTextList[0].Password);
         commonHeader_page.commonHeader_Sidebar().click().then(function () {
             commonHeader_page.commonHeader_Sidebar_ApplicantTracker().click().then(function () {
                 applicantTracker_page.applicantTracker_Header().getText().then(function (headerText) {
                     browser.driver.sleep(7000);
                     helperUtil.Reporter(headerText,JSONData.ApplicationTracker.ApplicationTracker_Header,"Applicant Tracker Page Name is "+headerText,"Applicant Tracker Header name should be "+JSONData.ApplicationTracker.ApplicationTracker_Header);
-
-                    commonHeader_page.commonHeader_Logout().click();
                 });
             });
         });
